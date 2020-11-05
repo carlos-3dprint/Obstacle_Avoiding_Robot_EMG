@@ -1,0 +1,41 @@
+***Wiring Help***
+These are some notes to help you understand the wiring.
+/////////////////////////////////////////////////////////////////////////////
+
+Pins of the HC-SR-04 Ultrasonic Sensor
+Trig ---> Pin 7
+Echo---> Pin 8
+VCC---> to 5VDC
+GND---> to GND
+
+/////////////////////////////////////////////////////////////////////////////
+
+Pins for LEDs
+***Before connecting be sure to protect yout LED with a 220ohms resistor
+LED 1 ---> Pin 11
+LED 2 ---> Pin 12
+
+/////////////////////////////////////////////////////////////////////////////
+
+Pins for L9110S H-bridge motor driver
+You can only connect 6 cables, so:
+
+
+First Motor ---> Pins 5 and 6 (PWM required) 
+Second Motor ---> Pins 9 and 10 (PWM required) 
+If the motor turn in the opposite direction,don't worry and inverse the cables.
+Ex. from 6 to 5 or from 10 to 9
+
+GND---> to GND
+VCC---> to 9VDC
+
+/////////////////////////////////////////////////////////////////////////////
+
+Finally connect the 9V Positive to a switch and after to the jumper row
+and the negative direclty to the jumper row
+
+The Arduino must be connected as follows:
+GND---> to GND
+Vin---> to 9VDC
+
+/////////////////////////////////////////////////////////////////////////////
